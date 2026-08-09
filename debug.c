@@ -5690,10 +5690,12 @@ static const struct rtw89_debugfs rtw89_debugfs_templ = {
 	.fw_log_manual = rtw89_debug_priv_set(fw_log_manual),
 	.stations = rtw89_debug_priv_get(stations),
 	.disable_dm = rtw89_debug_priv_set_and_get(disable_dm),
+	.static_pd_th = rtw89_debug_priv_set_and_get(static_pd_th),
 	.mlo_mode = rtw89_debug_priv_set_and_get(mlo_mode),
 	.diag_mac = rtw89_debug_priv_get(diag_mac, RSIZE_16K),
 	.bb_info = rtw89_debug_priv_set_and_get(bb_info),
 	.diag_bb = rtw89_debug_priv_get(diag_bb, RSIZE_8K),
+	.diag_rf = rtw89_debug_priv_set_and_get(diag_rf),
 	.monitor_opts = rtw89_debug_priv_set_and_get(monitor_opts,),
 #endif
 };
